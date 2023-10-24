@@ -1,0 +1,230 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #483d44;
+}
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+/* .logo img {
+  margin-top: 10px;
+  width: 81px;
+  height: 77px;
+} */
+
+.logo img {
+  position: absolute;
+  left: 14px;
+  width: 81px;
+  height: 77px;
+}
+.menu {
+  float: right;
+  border-radius: 20px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  line-height: 80px;
+  margin: auto;
+  height: 94px;
+  flex-shrink: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  border-radius: 20px;
+  background: #2f272c;
+  z-index: 1;
+  /* border-bottom: 1px solid #f65a83; */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.kolom .Deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "comic sans ms";
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  width: 100%;
+  line-height: 50px;
+}
+
+a.tbl-pink {
+  background: #20f30d;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-pink:hover {
+  background: red;
+  text-decoration: none;
+}
+
+a.tbl-hijau {
+  background: #fd06e4;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-hijau:hover {
+  background: red;
+  text-decoration: none;
+}
+
+p {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+  color: #ffffff;
+}
+
+.tengah {
+  text-align: center;
+  width: 100%;
+}
+
+.tutor-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kartu-tutor {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.kartu-tutor img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.kartu-tutor p {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  color: #f65a83;
+}
+
+#lab {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center; /* Mengatur tengah horizontal */
+  align-items: center; /* Mengatur tengah vertikal */
+  border-radius: 25px; /* Mengurangi ukuran border-radius */
+  background: #e2e1e1;
+  padding: 10px; /* Menambahkan padding */
+  width: 50%; /* Mengurangkan lebar elemen */
+  height: 50%; /* Mengurangkan tinggi elemen */
+}
+
+#lab img {
+  height: 50px; /* Merubah tinggi gambar */
+  width: 50px; /* Merubah lebar gambar */
+}
+
+#lab h1 {
+  font-size: 24px; /* Merubah ukuran font h1 */
+  margin: 10px 0; /* Merubah margin h1 */
+}
+
+.soal-category {
+  background-color: #d9d9d9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  width: 15%; /* Mengurangkan lebar elemen */
+  height: 15%; /* Mengurangkan tinggi elemen */
+  margin-bottom: 10px;
+}
+
+.soal-category h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.soal-category ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #fffefe;
+  border-radius: 15px;
+}
+
+.soal-category li {
+  margin-bottom: 5px;
+}
+
+.soal-category a {
+  text-decoration: none;
+  color: #333;
+}
+
+.soal-category a:hover {
+  text-decoration: underline;
+}
+
+#soal .card {
+  width: 63%; /* Lebar card 100% dari container parent */
+  height: 63%;
+}

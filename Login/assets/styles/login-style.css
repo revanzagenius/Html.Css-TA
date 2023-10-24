@@ -1,0 +1,165 @@
+/**
+ * styling untuk halaman login
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #483d44;
+}
+
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+.logo img {
+  position: absolute;
+  left: 14px;
+  width: 81px;
+  height: 77px;
+}
+
+.menu {
+  float: right;
+  border-radius: 20px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  line-height: 80px;
+  margin: auto;
+  height: 94px;
+  flex-shrink: 0;
+  position: fixed;
+  /* position: -webkit-sticky; */
+  top: 0;
+  border-radius: 20px;
+  background: #2f272c;
+  z-index: 1;
+  /* border-bottom: 1px solid #f65a83; */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  padding: 32px;
+}
+
+main img {
+  display: block;
+  margin: 0 auto 16px auto;
+  width: 100%;
+  max-width: 376px;
+}
+
+.login-input {
+  padding: 32px;
+  flex-shrink: 0;
+  background-color: #e2e1e1;
+  border-radius: 10px;
+  box-shadow: 10px 10px 4px 0px rgba(255, 255, 255, 0.25);
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-input input {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+  margin: 8px 0 16px 0;
+  border: 1px solid #a0a0a0;
+  border-radius: 8px;
+}
+
+.login-input img {
+  height: 100px;
+  width: 100px;
+}
+
+.login-input button {
+  margin-top: 32px;
+  padding: 8px 32px;
+  background-color: #20f30d;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  /* color: #000000; */
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  float: right;
+  cursor: pointer;
+}
+
+/*.login-input #inputEmail {
+  align-items: center;
+  width: 300px;
+}
+.login-input #inputPassword {
+  width: 300px;
+}*/
+.pop-up-modal {
+  position: fixed;
+  padding: 8px 32px;
+  background-color: #cc0000;
+  color: white;
+  bottom: -100px;
+  opacity: 0;
+  text-transform: capitalize;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  transition: bottom ease-in-out 0.3s, opacity ease-in-out 0.3s;
+}
+
+.pop-up-modal h2 {
+  padding: 6px;
+}
+
+.pop-up-modal p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.pop-up-modal.display {
+  bottom: 32px;
+  opacity: 1;
+}
